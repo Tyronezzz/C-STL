@@ -1,8 +1,5 @@
 
-
-Here are the notes of STL memory management.
-
-## **jjhou, yyds!**
+# **jjhou, yyds!**
 
 ## Reference 
 - https://www.bilibili.com/video/BV1Kb411B7N8?p=12
@@ -29,18 +26,18 @@ union obj{
 We only use _next_ when allocating or deallocating the memory, so it's smart to use the embedded pointer. 
 
 
-![image](https://github.com/Tyronezzz/CPP-STL/blob/master/images/alloc1.png)
+![image](./images/alloc1.png)
 
 
 ### Two allocators
 SGI offers two allocators, _malloc_alloc_template and _default_alloc_template. 
 
-![image](https://github.com/Tyronezzz/CPP-STL/blob/master/images/alloc2.png)
+![image](https://github.com/Tyronezzz/CPP-STL/blob/master/allocator/images/alloc2.png)
 
 
 - free_list. 
 
-![image](https://github.com/Tyronezzz/CPP-STL/blob/master/images/alloc3.png)
+![image](https://github.com/Tyronezzz/CPP-STL/blob/master/allocator/images/alloc3.png)
 
 For every block in free_list, it allocates 20 * 2 * blocksize(e.g, 32) when initialization. 20 for use and 20 for memory pool. 
 
