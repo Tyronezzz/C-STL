@@ -29,10 +29,7 @@ InputIterator find(InputIterator first, InputIterator last, const T& value)
 }
 
 
-
-
 int main(int argc, const char * argv[]) {
-    
 
     List<int> mylist;
     
