@@ -7,7 +7,7 @@
 //
 
 #include <iostream>
-#include "3mylist.h"
+//#include "3mylist.h"
 #include "3mylist-iter.h"
 
 // find()比较时 iter的类型为ListItem<int>, value的类型为int，故不可直接比较
@@ -16,7 +16,6 @@ bool operator!=(const ListItem<T>& item, T n)
 {
     return item.value() != n;
 }
-
 
 
 template <class InputIterator, class T>
@@ -61,7 +60,7 @@ int main(int argc, const char * argv[]) {
         std::cout<<"Not found"<<std::endl;
     else
         std::cout<<"Found "<<iter->value()<<std::endl;
-//
+
     
     return 0;
 }
