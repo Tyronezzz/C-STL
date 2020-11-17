@@ -2,6 +2,7 @@
 
 ## Reference 
 - https://www.bilibili.com/video/BV1Kb411B7N8?p=12
+- https://www.bilibili.com/video/BV1db411q7B8?p=15
 - https://github.com/haotianmichael/Algorithm/blob/master/C%2B%2B/docs/MemoryManagement.md
 - STL源码剖析
 
@@ -22,4 +23,9 @@
 
  1. value type: 迭代器所指对象的型别
  2. difference type: 两个迭代器之间的距离
+ 3. reference type
+ 4. pointer type
+ 5. iterator_category: 迭代器的五种类型(Input, output, forward, bidirectional, random access) 通过XX_tag标记不同的迭代器
 
+### type_traits???
+ 
