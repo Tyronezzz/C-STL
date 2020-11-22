@@ -9,3 +9,15 @@
 
 
 ## vector
+```
+    class vector{
+        protected:
+            iterator start;       // 目前使用空间的头
+            iterator finish;      // 目前使用空间的尾(+1)
+            iterator end_of_storage;   // 目前可用空间的头(+1)
+        ...
+    };
+```
+
+- GNU2.9   iterator traits  ->  T*
+- G4.9 iterator traits  ->  vector<T>::iterator
